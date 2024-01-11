@@ -34,7 +34,7 @@ function AuthForm() {
           <input id="password" type="password" name="password" required />
         </p>
         <div className={classes.actions}>
-          <Link to={`?mode=${isLogin ? "signup" : "login"}`}>
+          <Link to={`?mode=${isLogin ? "signup" : "login"}`}>    // THIS is HOW THE QUERY PARAMS ARE SET
             {" "}
             {/*  the Query parameter is declared  */}
             {isLogin ? "Create new user" : "Login"}
