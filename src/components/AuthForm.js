@@ -3,7 +3,7 @@ import { Form, Link, useSearchParams, useActionData, useNavigation } from "react
 import classes from "./AuthForm.module.css";
 
 function AuthForm() {
-  const data = useActionData();
+  const data = useActionData();  // fetches the data from the nearest action( attached to component ) in the application
   const navigation = useNavigation()
 
   const [searchParams] = useSearchParams();
